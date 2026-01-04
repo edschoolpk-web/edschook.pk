@@ -1,2 +1,0 @@
-This file is created to force GitHub Desktop to detect a change.
-You can delete this file after the push.
