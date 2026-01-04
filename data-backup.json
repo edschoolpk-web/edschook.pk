@@ -1,0 +1,500 @@
+{
+  "users": [
+    {
+      "id": "cmjvunisx0000v78c192c4d6x",
+      "email": "admin@edschool.pk",
+      "password": "$2b$12$vEW4JS/g4ddWckY1Ck3wTuXOtwq01w9hR5uwpJg6q6cp46T67JKFG",
+      "name": "Admin User",
+      "role": "ADMIN",
+      "createdAt": "2026-01-01T19:40:11.890Z",
+      "updatedAt": "2026-01-01T19:40:11.890Z"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "cmjwipyox0000uxqoy8n391qv",
+      "slug": "saim-raza",
+      "name": "Sir Saim",
+      "role": "Math Teacher",
+      "image": "/webImages/img5.jpg",
+      "detailImage": "/webImages/tech1.jpg",
+      "email": "saima@edschool.pk",
+      "bio": "<p>Sir Gohar is a dedicated and experienced Mathematics teacher who explains concepts in a simple, logical, and engaging way. He focuses on building strong fundamentals, improving problem-solving skills, and helping students achieve academic success. Students appreciate his clear explanations and supportive teaching style.</p>",
+      "dob": "15.03.1987",
+      "education": "M.Sc. Mathematics",
+      "experience": "5 years",
+      "createdAt": "2026-01-02T06:53:56.577Z",
+      "updatedAt": "2026-01-02T20:36:35.221Z"
+    },
+    {
+      "id": "cmjwipyqf0006uxqouvu6hprs",
+      "slug": "miss-ayesha",
+      "name": "Miss Ayesha",
+      "role": "English Teacher",
+      "image": "/uploads/teachers/1767353460978-5827547141221538202008300714959410167276399015n.jpg",
+      "detailImage": "/uploads/teachers/1767353460978-5827547141221538202008300714959410167276399015n.jpg",
+      "email": "updated_via_script@test.com",
+      "bio": "<p>Miss Ayesha is a passionate English teacher who inspires students to love literature and language.</p>",
+      "dob": "01.01.1990",
+      "education": "M.A. English",
+      "experience": "5 years",
+      "createdAt": "2026-01-02T06:53:56.631Z",
+      "updatedAt": "2026-01-02T20:36:26.243Z"
+    },
+    {
+      "id": "cmjwipyr6000auxqorun4acfd",
+      "slug": "sanjay-adwani",
+      "name": "Miss Sanjay Adwani",
+      "role": "Biology Teacher",
+      "image": "/webImages/img7.jpg",
+      "detailImage": "/webImages/tech1.jpg",
+      "email": "sanjay2@edschool.pk",
+      "bio": "<p>Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.Miss Sumaiqa brings biology to life with practical examples and a hands-on approach to learning.</p>",
+      "dob": "01.01.1992",
+      "education": "M.Sc. Botany",
+      "experience": "4 years",
+      "createdAt": "2026-01-02T06:53:56.659Z",
+      "updatedAt": "2026-01-02T20:36:18.395Z"
+    },
+    {
+      "id": "cmjwipyrp000euxqonb9m12vj",
+      "slug": "miss-khadija",
+      "name": "Miss Khadija",
+      "role": "Inglis",
+      "image": "/uploads/teachers/1767359292866-gallery05.jpg",
+      "detailImage": "/uploads/teachers/1767359292866-gallery05.jpg",
+      "email": "Khadija@edschool.pk",
+      "bio": "<p><span style=\"color: rgb(87, 87, 87); background-color: rgb(255, 255, 255);\">Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students.Miss Afsha instills strong moral values and detailed knowledge of Islamic studies in her students. hello</span></p>",
+      "dob": "01.01.1988",
+      "education": "M.A. Islamic Studies",
+      "experience": "8 years",
+      "createdAt": "2026-01-02T06:53:56.677Z",
+      "updatedAt": "2026-01-02T20:35:53.472Z"
+    },
+    {
+      "id": "cmjx9n6e30000v70kndfurv6q",
+      "slug": "arish-ali",
+      "name": "Sir Arish",
+      "role": "Web Development",
+      "image": "/uploads/teachers/1767382056213-t3.jpg",
+      "detailImage": "/uploads/teachers/1767382056213-t3.jpg",
+      "email": "arish@edschool.pk",
+      "bio": "<p>Arish is very best teacher, you should learn from him</p>",
+      "dob": "23/02/2025",
+      "education": "Best Vibe Coder",
+      "experience": "2",
+      "createdAt": "2026-01-02T19:27:36.220Z",
+      "updatedAt": "2026-01-02T20:35:39.079Z"
+    }
+  ],
+  "skills": [
+    {
+      "id": "cmjxc2oqw0001v74ouv1edohd",
+      "name": "Frontend Developer",
+      "percentage": 100,
+      "color": "#39ff14",
+      "teacherId": "cmjx9n6e30000v70kndfurv6q"
+    },
+    {
+      "id": "cmjxc2oqw0002v74ow6b8kv76",
+      "name": "Backend Developer",
+      "percentage": 60,
+      "color": "#ffeb3b",
+      "teacherId": "cmjx9n6e30000v70kndfurv6q"
+    },
+    {
+      "id": "cmjxc2zuo0004v74otmylb50v",
+      "name": "Teaching",
+      "percentage": 95,
+      "color": "#39ff14",
+      "teacherId": "cmjwipyrp000euxqonb9m12vj"
+    },
+    {
+      "id": "cmjxc2zuo0005v74o77dptx6a",
+      "name": "Guidance",
+      "percentage": 90,
+      "color": "#39ff14",
+      "teacherId": "cmjwipyrp000euxqonb9m12vj"
+    },
+    {
+      "id": "cmjxc3j2z0007v74oyx7j1cu1",
+      "name": "bakwas",
+      "percentage": 100,
+      "color": "#39ff14",
+      "teacherId": "cmjwipyr6000auxqorun4acfd"
+    },
+    {
+      "id": "cmjxc3j2z0008v74o6qrowqrr",
+      "name": "sher o shairi ",
+      "percentage": 50,
+      "color": "#ffeb3b",
+      "teacherId": "cmjwipyr6000auxqorun4acfd"
+    },
+    {
+      "id": "cmjxc3j2z0009v74oc6i6r37h",
+      "name": "bhashan",
+      "percentage": 10000,
+      "color": "#39ff14",
+      "teacherId": "cmjwipyr6000auxqorun4acfd"
+    },
+    {
+      "id": "cmjxc3p4z000bv74o6xzjmuoi",
+      "name": "Teaching",
+      "percentage": 95,
+      "color": "#39ff14",
+      "teacherId": "cmjwipyqf0006uxqouvu6hprs"
+    },
+    {
+      "id": "cmjxc3p4z000cv74ozg17tgjp",
+      "name": "Communication",
+      "percentage": 90,
+      "color": "#39ff14",
+      "teacherId": "cmjwipyqf0006uxqouvu6hprs"
+    },
+    {
+      "id": "cmjxc3w2d000ev74o8ef2swf9",
+      "name": "Teaching",
+      "percentage": 28,
+      "color": "#ff0000",
+      "teacherId": "cmjwipyox0000uxqoy8n391qv"
+    },
+    {
+      "id": "cmjxc3w2e000fv74o9hm9p0j8",
+      "name": "Speaking",
+      "percentage": 80,
+      "color": "#ffeb3b",
+      "teacherId": "cmjwipyox0000uxqoy8n391qv"
+    },
+    {
+      "id": "cmjxc3w2e000gv74ozamy8r7w",
+      "name": "Family Support",
+      "percentage": 85,
+      "color": "#39ff14",
+      "teacherId": "cmjwipyox0000uxqoy8n391qv"
+    },
+    {
+      "id": "cmjxc3w2e000hv74okk7ouyad",
+      "name": "Children's Well-being",
+      "percentage": 90,
+      "color": "#39ff14",
+      "teacherId": "cmjwipyox0000uxqoy8n391qv"
+    }
+  ],
+  "socials": [
+    {
+      "id": "cmjwipyp00005uxqowajguxyd",
+      "facebook": "#",
+      "twitter": "",
+      "linkedin": "#",
+      "instagram": "#",
+      "teacherId": "cmjwipyox0000uxqoy8n391qv"
+    },
+    {
+      "id": "cmjwipyqf0009uxqohkhvytab",
+      "facebook": "#",
+      "twitter": "",
+      "linkedin": "#",
+      "instagram": "#",
+      "teacherId": "cmjwipyqf0006uxqouvu6hprs"
+    },
+    {
+      "id": "cmjwipyr6000duxqo3fbv6nn9",
+      "facebook": "#",
+      "twitter": "",
+      "linkedin": "#",
+      "instagram": "#",
+      "teacherId": "cmjwipyr6000auxqorun4acfd"
+    },
+    {
+      "id": "cmjwipyrp000huxqomzg0esz0",
+      "facebook": "#",
+      "twitter": "",
+      "linkedin": "#",
+      "instagram": "#",
+      "teacherId": "cmjwipyrp000euxqonb9m12vj"
+    },
+    {
+      "id": "cmjx9n6e40003v70knb2m1lvl",
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "instagram": "",
+      "teacherId": "cmjx9n6e30000v70kndfurv6q"
+    }
+  ],
+  "galleryImages": [
+    {
+      "id": "cmjwvzplw001euxk8icladrdz",
+      "url": "/uploads/gallery/1767359126366-gallery01.jpg",
+      "title": "gallery01.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.372Z"
+    },
+    {
+      "id": "cmjwvzpm6001fuxk8zhutrso4",
+      "url": "/uploads/gallery/1767359126377-gallery02.jpg",
+      "title": "gallery02.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.382Z"
+    },
+    {
+      "id": "cmjwvzpmk001guxk8ji6io0me",
+      "url": "/uploads/gallery/1767359126390-gallery03.jpg",
+      "title": "gallery03.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.396Z"
+    },
+    {
+      "id": "cmjwvzpn1001huxk8l5pci8w9",
+      "url": "/uploads/gallery/1767359126404-gallery04.jpg",
+      "title": "gallery04.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.414Z"
+    },
+    {
+      "id": "cmjwvzpng001iuxk8mvc111d0",
+      "url": "/uploads/gallery/1767359126422-gallery05.jpg",
+      "title": "gallery05.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.429Z"
+    },
+    {
+      "id": "cmjwvzpnv001juxk8r09phyzo",
+      "url": "/uploads/gallery/1767359126436-gallery06.jpg",
+      "title": "gallery06.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.443Z"
+    },
+    {
+      "id": "cmjwvzpo6001kuxk8na892q3l",
+      "url": "/uploads/gallery/1767359126449-gallery07.jpg",
+      "title": "gallery07.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.454Z"
+    },
+    {
+      "id": "cmjwvzpoo001luxk8dlp85466",
+      "url": "/uploads/gallery/1767359126466-gallery08.jpg",
+      "title": "gallery08.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.473Z"
+    },
+    {
+      "id": "cmjwvzpp1001muxk88c7gcyut",
+      "url": "/uploads/gallery/1767359126480-gallery09.jpg",
+      "title": "gallery09.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.485Z"
+    },
+    {
+      "id": "cmjwvzpqt001nuxk8xyoz1mle",
+      "url": "/uploads/gallery/1767359126494-gallery10.jpg",
+      "title": "gallery10.jpg",
+      "category": "home",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:05:26.549Z"
+    },
+    {
+      "id": "cmjww0l5t001ouxk8znhso9rl",
+      "url": "/uploads/gallery/1767359167260-gallery01.jpg",
+      "title": "gallery01.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.265Z"
+    },
+    {
+      "id": "cmjww0l68001puxk8hjivaxg8",
+      "url": "/uploads/gallery/1767359167274-gallery02.jpg",
+      "title": "gallery02.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.280Z"
+    },
+    {
+      "id": "cmjww0l78001quxk8gkcdxhfq",
+      "url": "/uploads/gallery/1767359167309-gallery03.jpg",
+      "title": "gallery03.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.316Z"
+    },
+    {
+      "id": "cmjww0l82001ruxk8w19h9uap",
+      "url": "/uploads/gallery/1767359167330-gallery04.jpg",
+      "title": "gallery04.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.347Z"
+    },
+    {
+      "id": "cmjww0l99001suxk86jvp5cx3",
+      "url": "/uploads/gallery/1767359167376-gallery05.jpg",
+      "title": "gallery05.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.389Z"
+    },
+    {
+      "id": "cmjww0l9v001tuxk84i2f23xz",
+      "url": "/uploads/gallery/1767359167397-gallery06.jpg",
+      "title": "gallery06.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.411Z"
+    },
+    {
+      "id": "cmjww0lac001uuxk8mmkg56oz",
+      "url": "/uploads/gallery/1767359167421-gallery07.jpg",
+      "title": "gallery07.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.428Z"
+    },
+    {
+      "id": "cmjww0law001vuxk8ael68je7",
+      "url": "/uploads/gallery/1767359167441-gallery08.jpg",
+      "title": "gallery08.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.448Z"
+    },
+    {
+      "id": "cmjww0lbf001wuxk8ikz89iwc",
+      "url": "/uploads/gallery/1767359167461-gallery09.jpg",
+      "title": "gallery09.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.467Z"
+    },
+    {
+      "id": "cmjww0lc2001xuxk8w6jrteht",
+      "url": "/uploads/gallery/1767359167478-gallery10.jpg",
+      "title": "gallery10.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:07.490Z"
+    },
+    {
+      "id": "cmjww1oo0001yuxk8k40oze4n",
+      "url": "/uploads/gallery/1767359218457-gallery11.jpg",
+      "title": "gallery11.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.464Z"
+    },
+    {
+      "id": "cmjww1ood001zuxk8x5i28ai9",
+      "url": "/uploads/gallery/1767359218471-gallery12.jpg",
+      "title": "gallery12.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.478Z"
+    },
+    {
+      "id": "cmjww1oou0020uxk858qiejp8",
+      "url": "/uploads/gallery/1767359218489-gallery13.jpg",
+      "title": "gallery13.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.495Z"
+    },
+    {
+      "id": "cmjww1opr0021uxk8fynt8e34",
+      "url": "/uploads/gallery/1767359218508-gallery14.jpg",
+      "title": "gallery14.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.527Z"
+    },
+    {
+      "id": "cmjww1oqx0022uxk861x8iox1",
+      "url": "/uploads/gallery/1767359218559-gallery15.jpg",
+      "title": "gallery15.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.569Z"
+    },
+    {
+      "id": "cmjww1ord0023uxk8i8cc0eca",
+      "url": "/uploads/gallery/1767359218577-gallery16.jpg",
+      "title": "gallery16.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.586Z"
+    },
+    {
+      "id": "cmjww1os10024uxk88q80pl3z",
+      "url": "/uploads/gallery/1767359218600-gallery17.jpg",
+      "title": "gallery17.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.609Z"
+    },
+    {
+      "id": "cmjww1ote0025uxk841j5gc6c",
+      "url": "/uploads/gallery/1767359218633-gallery18.jpg",
+      "title": "gallery18.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.658Z"
+    },
+    {
+      "id": "cmjww1ovi0026uxk8zker8d6d",
+      "url": "/uploads/gallery/1767359218682-gallery19.jpg",
+      "title": "gallery19.jpg",
+      "category": "main",
+      "width": 0,
+      "height": 0,
+      "createdAt": "2026-01-02T13:06:58.734Z"
+    }
+  ],
+  "notices": [
+    {
+      "id": "cmjwwbvqc002auxk8u1niifym",
+      "content": "<p class=\"ql-align-center\">Sanjay&nbsp;is&nbsp;donkey&nbsp;!</p>",
+      "image": null,
+      "isActive": false,
+      "startDate": null,
+      "endDate": null,
+      "createdAt": "2026-01-02T13:14:54.180Z",
+      "updatedAt": "2026-01-02T19:19:14.750Z"
+    }
+  ]
+}
