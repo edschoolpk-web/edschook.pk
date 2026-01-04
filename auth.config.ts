@@ -29,6 +29,27 @@ export const authConfig = {
       }
       return token;
     },
+    async redirect({ url, baseUrl }) {
+      const authUrl = process.env.AUTH_URL || "https://darkgray-squirrel-611553.hostingersite.com";
+
+      // If the url is relative, prepend the authUrl
+      if (url.startsWith("/")) {
+        return `${authUrl}${url}`;
+      }
+
+      // If the url contains localhost or 0.0.0.0 (internal docker/local IPs), fix it
+      if (url.includes("0.0.0.0") || url.includes("localhost")) {
+        const path = new URL(url).pathname;
+        return `${authUrl}${path}`;
+      }
+
+      // Allow redirects to the same origin
+      if (new URL(url).origin === baseUrl) {
+        return url;
+      }
+
+      return authUrl;
+    },
     async session({ session, token }) {
       if (token && session.user) {
         session.user.role = token.role;
