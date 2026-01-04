@@ -3,38 +3,42 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
 model User {
   id        String   @id @default(cuid())
-  email     String   @unique
+  email     String   @unique(map: "User_email_key")
   password  String
   name      String?
   role      String   @default("ADMIN")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@map("user")
 }
 
 model Teacher {
   id          String   @id @default(cuid())
-  slug        String   @unique
+  slug        String   @unique(map: "Teacher_slug_key")
   name        String
   role        String
   image       String?
   detailImage String?
   email       String?
-  bio         String
+  bio         String   @db.Text
   dob         String?
-  education   String?
-  experience  String?
+  education   String?  @db.Text
+  experience  String?  @db.Text
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   
   // Relations
   skills      Skill[]
   socials     Social?
+
+  @@map("teacher")
 }
 
 model Skill {
@@ -43,7 +47,10 @@ model Skill {
   percentage  Int
   color       String?
   teacherId   String
-  teacher     Teacher @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  teacher     Teacher @relation(fields: [teacherId], references: [id], onDelete: Cascade, map: "Skill_teacherId_fkey")
+
+  @@index([teacherId], map: "Skill_teacherId_fkey")
+  @@map("skill")
 }
 
 model Social {
@@ -52,29 +59,35 @@ model Social {
   twitter   String?
   linkedin  String?
   instagram String?
-  teacherId String  @unique
-  teacher   Teacher @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  teacherId String  @unique(map: "Social_teacherId_key")
+  teacher   Teacher @relation(fields: [teacherId], references: [id], onDelete: Cascade, map: "Social_teacherId_fkey")
+
+  @@map("social")
 }
 
 model GalleryImage {
   id        String   @id @default(cuid())
-  url       String
+  url       String   @db.Text
   title     String?
   category  String   @default("general")
   width     Int?
   height    Int?
   createdAt DateTime @default(now())
+
+  @@map("galleryimage")
 }
 
 model Notice {
   id        String   @id @default(cuid())
-  content   String
+  content   String   @db.Text
   image     String?
   isActive  Boolean  @default(true)
   startDate DateTime?
   endDate   DateTime?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@map("notice")
 }
 
 model Certificate {
@@ -82,9 +95,11 @@ model Certificate {
   studentName    String
   designation    String
   universityName String
-  verifyCode     String   @unique
+  verifyCode     String   @unique(map: "Certificate_verifyCode_key")
   status         String   @default("VALID") // VALID, REVOKED
-  pdfPath        String?
+  pdfPath        String?  @db.Text
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
+
+  @@map("certificate")
 }
