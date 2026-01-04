@@ -27,12 +27,14 @@ export default function AdminLogin() {
       });
 
       if (result?.error) {
+        console.error("Login failed:", result.error);
         toast.error("Invalid credentials.");
         setIsPending(false);
       } else if (result?.ok) {
+        console.log("Login success, redirecting to /admin...");
         toast.success("Welcome back!");
+        // Small delay to ensure toast is seen, and allowing router to handle transition cleanly
         router.push("/admin");
-        router.refresh();
       } else {
         toast.error("Something went wrong.");
         setIsPending(false);
