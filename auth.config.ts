@@ -32,18 +32,31 @@ export const authConfig = {
     async redirect({ url, baseUrl }) {
       const authUrl = process.env.AUTH_URL || "https://darkgray-squirrel-611553.hostingersite.com";
 
-      // If the url is relative, prepend the authUrl
+      // DEBUG: console.log("Redirect check:", { url, baseUrl, authUrl });
+
+      // 1. If relative, prepend the proper public domain
       if (url.startsWith("/")) {
         return `${authUrl}${url}`;
       }
 
-      // If the url contains localhost or 0.0.0.0 (internal docker/local IPs), fix it
-      if (url.includes("0.0.0.0") || url.includes("localhost")) {
-        const path = new URL(url).pathname;
-        return `${authUrl}${path}`;
+      // 2. If the URL is explicitly pointing to local/internal network, FORCE it to public domain
+      // This catches http://0.0.0.0:3000/admin... from container internals
+      try {
+        const parsedUrl = new URL(url);
+        if (
+          parsedUrl.hostname === '0.0.0.0' ||
+          parsedUrl.hostname === 'localhost' ||
+          parsedUrl.hostname === '127.0.0.1'
+        ) {
+          return `${authUrl}${parsedUrl.pathname}${parsedUrl.search}`;
+        }
+      } catch (e) {
+        // invalid url, ignore
       }
 
-      // Allow redirects to the same origin
+      // 3. Fallback: if origin matches what system thinks is baseUrl (which might be 0.0.0.0)
+      // but we want to ignore that if it's internal. 
+      // Instead, we just trust standard NextAuth behavior IF it's not internal.
       if (new URL(url).origin === baseUrl) {
         return url;
       }

@@ -116,7 +116,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           </nav>
 
           <div className="sidebar-footer">
-            <button className="logout-btn" onClick={() => signOut({ callbackUrl: '/admin/login' })}>
+            <button className="logout-btn" onClick={() => signOut({ callbackUrl: typeof window !== 'undefined' ? `${window.location.origin}/admin/login` : '/admin/login' })}>
               <i className="fas fa-sign-out-alt"></i>
               <span>Logout</span>
             </button>
