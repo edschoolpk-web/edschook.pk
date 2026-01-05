@@ -1,6 +1,7 @@
 # Deployment Fix Guide
 
 The `ChunkLoadError` and `404` errors you are seeing on the deployed site (`darkgray-squirrel-611553...`) are typically caused by one of two things:
+
 1. **Running in Development Mode (`npm run dev`) on the server**, which is unstable for public access.
 2. **Uploading the local `.next` folder** to the server, which causes conflicts because Windows builds don't work on Linux servers.
 
@@ -15,7 +16,7 @@ On your **Hostinger Server** (File Manager or Environment Variables settings), e
 DATABASE_URL="mysql://u511174624_edschool_pk:7Os%3AC%2B%3AW@srv2024.hstgr.io:3306/u511174624_edschool_pk"
 
 # Auth (MUST be the domain name for production)
-AUTH_URL="https://darkgray-squirrel-611553.hostingersite.com"
+AUTH_URL="https://edinnschool.com "
 AUTH_TRUST_HOST=true
 AUTH_SECRET="iqIbYGUITjaYGS/0kx68Ml1GH/wiRxvIng44ORg3GEk="
 
@@ -51,6 +52,7 @@ npm start
 ## Step 3: Verify Startup Command
 
 If you are using Hostinger's "Node.js Application" feature:
+
 1.  Go to the Node.js settings.
 2.  Start Command: `npm start` (instead of `npm run dev`).
 3.  Click **Restart**.
