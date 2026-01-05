@@ -31,7 +31,12 @@ export const authConfig = {
     },
     async redirect({ url, baseUrl }) {
       // Use AUTH_URL from env if set, otherwise use the default baseUrl
-      const effectiveBase = process.env.AUTH_URL || baseUrl;
+      let effectiveBase = process.env.AUTH_URL || baseUrl;
+
+      // Ensure effectiveBase has a protocol
+      if (effectiveBase && !effectiveBase.startsWith("http")) {
+        effectiveBase = `https://${effectiveBase}`;
+      }
 
       // Allows relative callback URLs
       if (url.startsWith("/")) {
@@ -39,8 +44,12 @@ export const authConfig = {
       }
 
       // Allows callback URLs on the same origin
-      if (new URL(url).origin === effectiveBase) {
-        return url;
+      try {
+        if (new URL(url).origin === effectiveBase) {
+          return url;
+        }
+      } catch {
+        // If url is not a valid URL (e.g. relative without leading slash), fallback to default
       }
 
       return effectiveBase;

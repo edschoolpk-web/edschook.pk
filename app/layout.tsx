@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <link rel="icon" href="/webImages/favicon.png" />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <Providers>
           {children}
         </Providers>
